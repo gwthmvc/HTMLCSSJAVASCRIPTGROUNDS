@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Half & Half</title>
+    <link rel="shortcut icon" href="favicons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="split-container">
+        <div id="left"><p id="blackpink">BE </p></div>
+        <div id="right">
+
+        </div>
+    </div>
+    <script>
+        // The provided JSON data
+        const data = {
+            "names": ["RELEVANT", "DIRECT", "COURTEOUS", "INSPIRING", "GENUINE", "COMPASSIONATE", "AUTHENTIC"]
+        };
+
+        // Target the right div
+        const rightContainer = document.getElementById('right');
+
+        // Loop through the names array and append them to the DOM
+        data.names.forEach(name => {
+            const wordElement = document.createElement('p');
+            wordElement.textContent = name;
+            rightContainer.appendChild(wordElement);
+        });
+    </script>
+</body>
+</html>
